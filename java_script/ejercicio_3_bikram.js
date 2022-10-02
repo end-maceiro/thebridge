@@ -179,7 +179,68 @@ function eliminarDuplicados () {
     let newArray = [];
 
     for (let i = 0; i < array.length; i++) {
+        if (array[i] == array[1 + i]) {
+            array.pop(array[i]);
+        }
         
-           
+           return array
     }
 }
+console.log(eliminarDuplicados());
+
+// 15.- Crear variable de nombre arrayNumerosNeg declarada con un array de números del 0 al -9 (0, -1, -2...)
+
+    var array = [0, -1, -2, -3, -4, -5, -6, -7, -8, -9];
+
+// 16.- Crear variable de nombre holaMundo declarada con valor array con las palabras 'Hola' y 'Mundo'
+
+var holaMundo = ['Hola', 'Mundo'];
+console.log(holaMundo);
+
+// 17.- Crear variable de nombre loGuardoTodo declarada con valor array con valores 'hola', 'que', 23, 42.33 y 'tal'
+
+var loGuardoTodo = ['hola', 'que', 23, 42.33, 'tal'];
+console.log(loGuardoTodo);
+
+// 18.- Crear variable de nombre arrayDeArrays declarada con valor array: [[756, 'nombre'], [225, 'apellido'], [298, 'direccion']]
+
+var arrayDeArrays = [[756, 'nombre'], [225, 'apellido'], [298, 'direccón']];
+console.log(arrayDeArrays);
+
+// 19.- Crea la función multiplicacion que acepte como argumento dos números y devuelva el resultado de su multiplicación
+
+function multiplicacion (num1, num2) {
+    var resultado = num1 * num2
+    console.log(resultado);
+}
+multiplicacion(3,2);
+
+// 20.- Crea la función division que acepte como argumento dos números y devuelva el resultado de su division
+
+function division (num1, num2) {
+    var resultado = num1 / num2
+    console.log(resultado);
+}
+division(8,2);
+
+// 21.- Crea la función esPar que acepte como argumento un número y devuelva true si es par y false si es impar
+
+function esPar (num) {
+    if (num%2 == 0){
+         console.log(true);
+    } else {console.log(false)}
+}
+esPar (20)
+
+// 22.- Crea el array arrayFunciones que tenga como valor las funciones: suma, resta y multiplicación 
+// (todas aceptan 2 números como argumento y devuelve el resultado de su operación)
+
+
+
+// 23.- Crear la función ordenarArray2 que acepta como argumento un array de números y devuelva un array ordenado de mayor a menor
+
+// 24.- Crear la función obtenerImpares que acepta como argumento un array de números y devuelva un array con los elementos impares
+
+// 25.- Crear la función sumarArray que acepte como argumento un array numérico y devuelva la suma de los números en el array Array: [1, 2, 3] resultado: 6
+
+// 26.- Crear la función multiplicarArray que acepte como argumento un array numérico y devuelva la multiplicación de los números en el array Array: [2, 3, 4] resultado: 24
